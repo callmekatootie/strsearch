@@ -4,6 +4,7 @@ package strsearch
     Public function that takes in the text and the pattern to find in that text
     Returns -1 if pattern can't be found, else returns the location (zero based)
     where pattern can be found
+    Uses Boyer Moore Horspool algorithm
 */
 func Find(text, pattern string) int {
 	m := len(text)
